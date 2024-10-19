@@ -37,7 +37,7 @@ function print(data) {
   console.log(data);
 }
 
-let printOtimised = Debounce(print, 1000);
+// let printOtimised = Debounce(print, 1000);
 
 // printOtimised("i");
 // printOtimised("ip");

@@ -71,7 +71,7 @@ for (let i = 0; i < str.length; i++) {
     counts[`${str[i]}`] = 1;
   }
 }
-// console.log(counts);
+console.log(counts);
 
 let data = {
   todo: [{ id: "1", title: "gdh", category: "todo" }],

@@ -14,3 +14,18 @@ var twoSum = function (nums, target) {
 };
 
 console.log(twoSum(nums, 9));
+
+//single  loop  best  method
+
+var twoSum = function (nums, target) {
+  const numMap = {};
+  for (let i = 0; i < nums.length; i++) {
+    const complement = target - nums[i];
+    if (numMap[complement] != undefined) {
+      // her we also check by using (in) operater  (complement in numMap)
+      return [numMap[complement], i];
+    }
+    numMap[nums[i]] = i;
+  }
+  return [];
+};
